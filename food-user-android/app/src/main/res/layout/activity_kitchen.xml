@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_bg"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/includeHeader"
+        layout="@layout/include_header" />
+
+    <LinearLayout
+        android:id="@+id/linearVendorInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/includeHeader"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:background="@drawable/bg_round_fad2c2"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/_10sdp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/_29sdp"
+            android:layout_height="@dimen/_29sdp"
+            android:background="@drawable/bg_circle_strok"
+            android:padding="@dimen/_8sdp"
+            android:src="@drawable/ic_vendor" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvNameVendor"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/sf_pro_display_semi_bold"
+                    android:gravity="center_vertical"
+                    android:text="Chef Manoj"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/_12sdp" />
+
+                <LinearLayout
+                    android:id="@+id/linearCall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_rect_call"
+                    android:gravity="center"
+                    android:paddingStart="@dimen/_6sdp"
+                    android:paddingTop="@dimen/_1sdp"
+                    android:paddingEnd="@dimen/_6sdp"
+                    android:paddingBottom="@dimen/_1sdp">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ivCrossK"
+                        android:layout_width="@dimen/_8sdp"
+                        android:layout_height="@dimen/_7sdp"
+                        android:src="@drawable/ic_call" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_4sdp"
+                        android:fontFamily="@font/sf_pro_display_regular"
+                        android:gravity="center_vertical"
+                        android:text="Call"
+                        android:textColor="@color/color_6C1B03"
+                        android:textSize="@dimen/_10sdp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvInfoVendor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_40sdp"
+                android:fontFamily="@font/sf_pro_display_regular"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/_10sdp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swpKt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linearCartKt"
+        android:layout_below="@+id/linearVendorInfo"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvProductKt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/adapter_kitchen" />
+
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/linearCartKt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_25sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:backgroundTint="@color/color_black"
+        android:fontFamily="@font/sf_pro_display_semi_bold"
+        android:text="Checkout"
+        android:textAllCaps="false"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/_11sdp"
+        android:visibility="gone"
+        app:cornerRadius="@dimen/_40sdp"
+        app:rippleColor="@color/colorLightBlue" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@color/red"
+        android:foreground="?selectableItemBackground"
+        android:visibility="gone">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_weight="1"
+            android:fontFamily="@font/sf_pro_display_regular"
+            android:gravity="center_vertical"
+            android:text="Checkout"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/_15sdp" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTotalAmountKt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_pro_display_semi_bold"
+            android:text="300"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/_14sdp" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvItemCountKt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:alpha="0.5"
+            android:fontFamily="@font/sf_pro_display_regular"
+            android:text="0"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/_11sdp" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?actionBarItemBackground"
+            android:padding="@dimen/_12sdp"
+            android:rotation="180"
+            android:src="@drawable/ic_back" />
+
+    </LinearLayout>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvNoDataKt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/sf_pro_display_semi_bold"
+        android:gravity="center"
+        android:text="No food available yet!"
+        android:textColor="@color/color_black"
+        android:textSize="@dimen/_14sdp"
+        android:visibility="invisible" />
+
+
+</RelativeLayout>

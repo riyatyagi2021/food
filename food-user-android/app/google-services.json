@@ -1,0 +1,84 @@
+{
+  "project_info": {
+    "project_number": "204814364566",
+    "project_id": "mobkitchen-a8c7c",
+    "storage_bucket": "mobkitchen-a8c7c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:204814364566:android:df91f62bf59999d20c37b7",
+        "android_client_info": {
+          "package_name": "com.mobcoder.kitchen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "204814364566-hr0s0232a0c4a8egftnj877ua3jeku75.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9n9MG98QPRin0P9TuFLh471KH0RAxHU8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "204814364566-hr0s0232a0c4a8egftnj877ua3jeku75.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "204814364566-rcrjeqg52v8r5s555j5m7kktilb9417a.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.Mobcoder.FoodManagement",
+                "app_store_id": "1576056177"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:204814364566:android:72e3e5648e21d9b90c37b7",
+        "android_client_info": {
+          "package_name": "com.mobcoder.kitchen.kilter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "204814364566-hr0s0232a0c4a8egftnj877ua3jeku75.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9n9MG98QPRin0P9TuFLh471KH0RAxHU8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "204814364566-hr0s0232a0c4a8egftnj877ua3jeku75.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "204814364566-rcrjeqg52v8r5s555j5m7kktilb9417a.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.Mobcoder.FoodManagement",
+                "app_store_id": "1576056177"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
